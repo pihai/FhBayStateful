@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "FhBayStateful", "FhBayStateful\FhBayStateful.sfproj", "{13BF3DAE-B727-43EF-845E-9757F84EC2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "AuctionService\AuctionService.csproj", "{AB31FA60-3710-47F4-B324-98A89C5D739E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionWebApi", "AuctionWebApi\AuctionWebApi.csproj", "{204133B7-4250-4318-94F7-E13C55DF8BF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Debug|x64.ActiveCfg = Debug|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Debug|x64.Build.0 = Debug|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Debug|x64.Deploy.0 = Debug|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Release|Any CPU.ActiveCfg = Release|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Release|x64.ActiveCfg = Release|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Release|x64.Build.0 = Release|x64
+		{13BF3DAE-B727-43EF-845E-9757F84EC2EC}.Release|x64.Deploy.0 = Release|x64
+		{AB31FA60-3710-47F4-B324-98A89C5D739E}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{AB31FA60-3710-47F4-B324-98A89C5D739E}.Debug|x64.ActiveCfg = Debug|x64
+		{AB31FA60-3710-47F4-B324-98A89C5D739E}.Debug|x64.Build.0 = Debug|x64
+		{AB31FA60-3710-47F4-B324-98A89C5D739E}.Release|Any CPU.ActiveCfg = Release|x64
+		{AB31FA60-3710-47F4-B324-98A89C5D739E}.Release|x64.ActiveCfg = Release|x64
+		{AB31FA60-3710-47F4-B324-98A89C5D739E}.Release|x64.Build.0 = Release|x64
+		{204133B7-4250-4318-94F7-E13C55DF8BF5}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{204133B7-4250-4318-94F7-E13C55DF8BF5}.Debug|x64.ActiveCfg = Debug|x64
+		{204133B7-4250-4318-94F7-E13C55DF8BF5}.Debug|x64.Build.0 = Debug|x64
+		{204133B7-4250-4318-94F7-E13C55DF8BF5}.Release|Any CPU.ActiveCfg = Release|x64
+		{204133B7-4250-4318-94F7-E13C55DF8BF5}.Release|x64.ActiveCfg = Release|x64
+		{204133B7-4250-4318-94F7-E13C55DF8BF5}.Release|x64.Build.0 = Release|x64
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Release|x64.ActiveCfg = Release|Any CPU
+		{FA2080D6-4720-4F6B-A419-8368C0C6F8BF}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/FhBayStateful" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+   <Parameters>
+      <Parameter Name="AuctionWebApi_InstanceCount" Value="-1" />
+      <Parameter Name="AuctionService_PartitionCount" Value="1" />
+      <Parameter Name="AuctionService_MinReplicaSetSize" Value="2" />
+      <Parameter Name="AuctionService_TargetReplicaSetSize" Value="3" />
+   </Parameters>
+</Application>

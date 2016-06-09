@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="FhBayStatefulType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+   <Parameters>
+      <Parameter Name="AuctionWebApi_InstanceCount" DefaultValue="-1" />
+      <Parameter Name="AuctionService_MinReplicaSetSize" DefaultValue="2" />
+      <Parameter Name="AuctionService_PartitionCount" DefaultValue="5" />
+      <Parameter Name="AuctionService_TargetReplicaSetSize" DefaultValue="3" />
+   </Parameters>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="AuctionWebApiPkg" ServiceManifestVersion="1.0.0" />
+      <ConfigOverrides />
+   </ServiceManifestImport>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="AuctionServicePkg" ServiceManifestVersion="1.0.0" />
+      <ConfigOverrides />
+   </ServiceManifestImport>
+   <DefaultServices>
+      <Service Name="AuctionWebApi">
+         <StatelessService ServiceTypeName="AuctionWebApiType" InstanceCount="[AuctionWebApi_InstanceCount]">
+            <SingletonPartition />
+         </StatelessService>
+      </Service>
+      <Service Name="AuctionService">
+         <StatefulService ServiceTypeName="AuctionServiceType" TargetReplicaSetSize="[AuctionService_TargetReplicaSetSize]" MinReplicaSetSize="[AuctionService_MinReplicaSetSize]">
+            <UniformInt64Partition PartitionCount="[AuctionService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+         </StatefulService>
+      </Service>
+   </DefaultServices>
+</ApplicationManifest>
